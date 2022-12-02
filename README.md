@@ -1,15 +1,6 @@
-# advent_of_code_22
+# Advent of Code 2022
 
-To install dependencies:
 
-```bash
-bun install
-```
+I'll try to code every day by this advent.
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v0.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+I chose bun.sh as a compiler because I want try its performance and limits
