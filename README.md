@@ -1,4 +1,4 @@
-# Advent of Code 2022
+# Advent of Code 2022 in Javascript/Typescript
 
 
 I'll try to code every day by this advent.
