@@ -11,15 +11,12 @@
   }
 
   const result = lines.reduce((acc, [partA, partB]) => {
-    const intersection = partA.filter(char => partB.includes(char))
-    const set = new Set(...intersection)
-    set.forEach(char => {
-      if (islowerCase(char)) {
-        acc = acc + char.charCodeAt(0) - 96
-      } else {
-        acc = acc + char.charCodeAt(0) - 64 + 26
-      }
-    })
+    const intersection = partA.find(char => partB.includes(char))
+    if (islowerCase(intersection)) {
+      acc = acc + intersection.charCodeAt(0) - 96
+    } else {
+      acc = acc + intersection.charCodeAt(0) - 64 + 26
+    }
     return acc
   }, 0)
   
